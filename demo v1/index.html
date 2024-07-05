@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOUHAILA & LEFORT</title>  
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5"> <b>Master1 FSR IAO 2024 :</b> <b class="text-danger">Fonctions de Hachage </b></h1>
+        <input type="text" id="inputValue" placeholder="Entrez une valeur">
+        <button onclick="generateHashes()">Générer les hash</button>
+        
+        <div class="result">
+            <p><strong>MD5:</strong> <span id="md5Result"></span></p>
+            <p><strong>SHA-256:</strong> <span id="sha256Result"></span></p>
+            <p><strong>SHA-3:</strong> <span id="sha3Result"></span></p> 
+            <p><strong>bcrypt:</strong> <span id="bcryptResult"></span></p>
+            <p><strong>Argon2:</strong> <span id="argon2Result"></span></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script> -->  
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha3/0.8.0/sha3.min.js"></script> --> 
+    
+    <script src="sha3.min.js"></script>
+    <script src="bcrypt.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>  
